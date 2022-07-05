@@ -40,7 +40,7 @@ class MainPage(WebPage):
         self.click_elt(btn_shopping_cart)
 
     def find_and_count_all_item_in_order(self):
-        container = self.find_if_are_visible(*self.locator_cart_page.CONTAINER_WITH_ITEM_IN_ORDER)
+        container = self.find_are_visible(*self.locator_cart_page.CONTAINER_WITH_ITEM_IN_ORDER)
         value_items_in_list = len(container)
         assert value_items_in_list == 2
 

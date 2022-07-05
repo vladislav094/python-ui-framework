@@ -1,15 +1,38 @@
+from typing import List
+
+from selenium.webdriver.remote.webelement import WebElement
 
 from framework.utils import SeleniumBase
 
 
 class WebPage(SeleniumBase):
-    def __init__(self, driver, find_by=None, locator=None):
+    def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
-        self.find_by = find_by
-        self.locator = locator
+
+    def find_elt(self, find_by: str, locator: str) -> WebElement:
+        return self.find_if_visible(find_by, locator)
+
+    def find_elts(self, find_by, locator) -> List[WebElement]:
+        return self.find_are_visible(find_by, locator)
+
+    def present_elt(self, find_by: str, locator: str) -> WebElement:
+        return self.find_if_present(find_by, locator)
+
+    def not_present_elt(self, find_by: str, locator: str) -> WebElement:
+        return self.find_if_not_present(find_by, locator)
+
+    def hover(self, element: WebElement) -> WebElement:
+        return self.hover_cursor(element)
 
     def get_nav_links_text(self, links) -> str:
         """Return all nav links text. Return format is a String with comma separated values"""
         nav_links_text = self.get_text_from_webelements(links)
         return ",".join(nav_links_text)
+
+    def scroll(self, width: int, height: int) -> WebElement:
+        """The function scrolls the page to the specified height"""
+        return self.window_scroll_To(width, height)
+
+    def switch_frame(self, element: WebElement) -> WebElement:
+        return self.switch_iframe(element)
