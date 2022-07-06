@@ -2,7 +2,7 @@ import pytest
 
 from framework.common.elements.element import CheckBox as chk_bx
 from framework.features.automationpractice.main_page import MainPage
-from framework.features.automationpractice.sing_in_page import SingInPage
+from framework.features.automationpractice.sing_in_page import SignInPage
 
 
 @pytest.mark.usefixtures("set_to_hw_24")
@@ -21,7 +21,7 @@ class TestSuite:
         main.check_item_in_order()
 
     def test_registration_new_user(self):
-        sing_in = SingInPage(self.driver)
+        sing_in = SignInPage(self.driver)
         sing_in.open_page()
         sing_in.registration_new_email_address()
         sing_in.find_gender_Mr_and_click()

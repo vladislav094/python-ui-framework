@@ -80,5 +80,5 @@ class SeleniumBase:
     def get_title_page(self) -> WebElement:
         return self.driver.title
 
-    def new_path(self):
-        self.driver.find_element(By.XPATH)
+    def input(self, data):
+        self.driver.send_keys(data)

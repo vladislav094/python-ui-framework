@@ -7,7 +7,7 @@ from framework.utils import SeleniumBase
 class DynamicPageElement:
     def __init__(self, driver):
         self.driver = driver
-        self.elements = DynamicControlsPageLocators
+        self.locator = DynamicControlsPageLocators
 
     @property
     def selenium(self):
@@ -16,27 +16,27 @@ class DynamicPageElement:
     @property
     def first_check_box(self):
         # return SeleniumBase(driver=self.driver, locator=(By.XPATH, "//div[@id='checkbox']//input[1]"))
-        return SeleniumBase(driver=self.driver, locator=(self.elements.FIRST_CHECKBOX))
+        return SeleniumBase(driver=self.driver, locator=(self.locator.FIRST_CHECKBOX))
 
     @property
     def btn_remove(self):
         # return SeleniumBase(driver=self.driver, locator=(By.XPATH, "//*[@id='checkbox-example']/button"))
-        return SeleniumBase(driver=self.driver, locator=(self.elements.BTN_REMOVE))
+        return SeleniumBase(driver=self.driver, locator=(self.locator.BTN_REMOVE))
 
     @property
     def text_field(self):
         # return SeleniumBase(driver=self.driver, locator=(By.XPATH, "//*[@id='message']"))
-        return SeleniumBase(driver=self.driver, locator=(self.elements.TEXT))
+        return SeleniumBase(driver=self.driver, locator=(self.locator.TEXT))
 
     @property
     def input_field(self):
         # return SeleniumBase(driver=self.driver, locator=(By.XPATH, "//*[@id='input-example']/input"))
-        return SeleniumBase(driver=self.driver, locator=(self.elements.INPUT_FIELD))
+        return SeleniumBase(driver=self.driver, locator=(self.locator.INPUT_FIELD))
 
     @property
     def btn_under_input(self):
         # return SeleniumBase(driver=self.driver, locator=(By.XPATH, "//*[@id='input-example']/button"))
-        return SeleniumBase(driver=self.driver, locator=(self.elements.BTN_UNDER_INPUT))
+        return SeleniumBase(driver=self.driver, locator=(self.locator.BTN_UNDER_INPUT))
 
 
 class DynamicPage:
