@@ -23,5 +23,5 @@ class TestSuite:
         frame = heroku.frames_page
         heroku.go_to("frames")
         frame.find_link_and_click()
-        frame.find_frame_and_swithc()
+        frame.find_frame_and_switch()
         frame.compare_text_in_frame()

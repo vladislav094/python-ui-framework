@@ -6,7 +6,10 @@ from selenium.webdriver.chrome.options import Options as chr_opt
 @pytest.fixture
 def get_chrome_options():
     options = chr_opt()
-    # options.add_argument('--headless')
+    options.binary_location = '/usr/bin/google-chrome'
+    options.add_argument('--no-sandbox')
+    options.add_argument('--headless')
+    options.add_argument('--disable-dev-shm-usage')
     options.add_argument("--start-maximized")
     return options
 

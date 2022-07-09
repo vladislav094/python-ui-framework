@@ -1,9 +1,9 @@
-FROM python:3.9.9-buster as base
+FROM python:3.9.7-buster
 
 ENV PIP_DEFAULT_TIMEOUT=100 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     PIP_NO_CACHE_DIR=1 \
-    POETRY_VERSION=1.1.7
+    POETRY_VERSION=1.1.13
 
 # Install Google Chrome.
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
@@ -25,10 +25,9 @@ WORKDIR /code
 COPY poetry.lock pyproject.toml ./
 
 # Install dependencies via Poetry.
-RUN poetry config virtualenvs.create false && \
-    poetry install --no-interaction --no-ansi
+RUN poetry config virtualenvs.create false \
+    && poetry install --no-interaction --no-ansi
 
 # Copy the source code into the image.
 COPY framework ./framework
 COPY tests ./tests
-COPY pytest.ini .
