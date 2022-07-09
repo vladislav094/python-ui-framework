@@ -1,10 +1,21 @@
+#!groovy
+//Run docker build
+properties([disabledConcurrentBuilds()])
+
 pipeline {
-    agent { docker { image 'python:3.9.7-buster'} }
-    stages {
-        stage('build') {
-            steps {
-                sh 'python --version'
-            }
+    agent {
+        label 'master'
+        }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10' ))
+        timestamps()
+    }
+    stages("create docker image") {
+        steps {
+            echo "========== start building image =========="
+            sh "docker build -t web_test"
+            sh "docker run web_test pytest -s -v tests/test_heroku_app_1.py"
         }
     }
 }
+
