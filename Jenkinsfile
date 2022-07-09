@@ -6,10 +6,10 @@ pipeline {
     agent {
         label 'master'
         }
-    options {
-        buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10' ))
-        timestamps()
-    }
+//     options {
+//         buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10' ))
+//         timestamps()
+//     }
     stage("create docker image") {
         steps {
             echo "========== start building image =========="
