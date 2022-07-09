@@ -10,7 +10,7 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10' ))
         timestamps()
     }
-    stages("create docker image") {
+    stage("create docker image") {
         steps {
             echo "========== start building image =========="
             sh "docker build -t web_test"
