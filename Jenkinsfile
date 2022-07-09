@@ -1,6 +1,6 @@
 #!groovy
 //Run docker build
-properties([disabledConcurrentBuilds()])
+// properties([disabledConcurrentBuilds()])
 
 pipeline {
     agent {
