@@ -52,10 +52,6 @@ class MainPageElement:
 class MainPage:
     def __init__(self, driver):
         self.element = MainPageElement(driver=driver)
-        self.url = "http://automationpractice.com/index.php"
-
-    def open_page(self):
-        self.element.selenium.go_to_url(self.url)
 
     def scroll_page_for_items(self):
         self.element.selenium.scroll(0, 600)

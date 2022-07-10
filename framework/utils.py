@@ -80,5 +80,6 @@ class SeleniumBase:
     def get_title_page(self) -> WebElement:
         return self.driver.title
 
-    def input(self, data):
-        self.driver.send_keys(data)
+    @staticmethod
+    def input(web_element, data: str):
+        web_element.send_keys(data)

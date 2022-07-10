@@ -3,12 +3,12 @@ from selenium.webdriver.common.by import By
 
 class AutomationPracticeSingInPage:
     EMAIL_FIELD_FOR_CREATE = (By.XPATH, '//*[@id="email_create"]')  # Required field
-    EMAIL_FIELD_FOR_SING_IN = (By.XPATH, '//*[@id="email"]')  # Required field
-    PASSWORD_FIELD_FOR_SING_IN = (By.XPATH, '//*[@id="passwd"]')  # Required field
+    EMAIL_FIELD_FOR_SIGN_IN = (By.XPATH, '//*[@id="email"]')  # Required field
+    PASSWORD_FIELD_FOR_SIGN_IN = (By.XPATH, '//*[@id="passwd"]')  # Required field
 
     """All button"""
     SUBMIT_BUTTON_FOR_CREATE = (By.XPATH, '//*[@id="SubmitCreate"]')
-    SUBMIT_BUTTON_FOR_SING_IN = (By.XPATH, '//*[@id="SubmitLogin"]')
+    SUBMIT_BUTTON_FOR_SIGN_IN = (By.XPATH, '//*[@id="SubmitLogin"]')
     SUBMIT_BUTTON_FOR_RETRIEVE_PASSWORD = (By.XPATH, '//*[@id="form_forgotpassword"]/fieldset/p/button')
     WHEN_FORGOT_PASSWORD_BUTTON = (By.XPATH, '//*[@id="login_form"]/div/p[1]/a')
     BACK_TO_LOGIN_BUTTON = (By.XPATH, '//*[@id="center_column"]/ul/li/a')
@@ -43,5 +43,5 @@ class AutomationPracticeSingInPage:
     ALIAS_ADDRESS_FIELD_IN_ADDRESS = (By.XPATH, '//*[@id="alias"]')  # Required field
 
     """State and Country Drop-down list"""
-    STATE_DROP_LIST = (By.XPATH, '//*[@id="id_state"]')  # Required field
-    COUNTRY_DROP_LIST = (By.XPATH, '//*[@id="id_country"]')  # Required field
+    STATE_DROPDOWN_LIST = (By.XPATH, '//*[@id="id_state"]')  # Required field
+    COUNTRY_DROPDOWN_LIST = (By.XPATH, '//*[@id="id_country"]')  # Required field
