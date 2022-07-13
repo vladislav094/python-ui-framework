@@ -1,15 +1,23 @@
 from random import randint
+from faker import Faker
 
-mail_random_int = randint(1,1000)
-password_random_int = randint(1,1000)
+password_random_int = randint(666666, 88888888)
+fake = Faker()
+random_mail = fake.email()
+
+
 
 class DataUserForRegistration:
 
 	'''Credentials'''
 	EMAIL_ADDRESS = 'qweqwe123@qwe.qwe'
 	PASSWORD = 'qwe123'
-	RANDOM_EMAIL_ADDRESS_FOR_REGISTRATION = f'testmail{mail_random_int}@mail.com'   #Required field
+	RANDOM_EMAIL_ADDRESS_FOR_REGISTRATION = f'{random_mail}'   #Required field
 	RANDOM_PASSWORD_FOR_REGISTRATION = f'pass{password_random_int}word'             #Required field
+
+	"""Credentials after registration"""
+	SAVED_PASSWORD_AFTER_REGISTRATION = RANDOM_PASSWORD_FOR_REGISTRATION
+	SAVED_EMAIL_AFTER_REGISTRATION = RANDOM_EMAIL_ADDRESS_FOR_REGISTRATION
 
 	'''Data of user'''
 	FIRST_NAME = 'Ivan'     #Required field
@@ -22,9 +30,12 @@ class DataUserForRegistration:
 	ADDRESS_LINE_2 = 'Solidarity street'
 	CITY = 'New York'   #Required field
 	STATE = 'New York'  #Required field
-	POSTAL_CODE = '112233'  #Required field
+	POSTAL_CODE = '12345'  #Required field
 	COUNTRY = 'United States'   #Required field
 	HOME_PHONE = '+1 112 768 44 25'
 	MOBILE_PHONE = '+1 777 23 23 000'   #Required field
 	ALIAS_ADDRESS = 'Lenina street'     #Required field
+
+
+
 

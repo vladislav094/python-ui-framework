@@ -85,15 +85,13 @@ class MainPage:
         assert value_items_in_list == 2
 
     def check_item_in_order(self):
-        item_1 = self.element.name_item_in_order_short.find_if_visible()
-        item_2 = self.element.name_item_in_order_blouse.find_if_visible()
-        name_1 = item_1.text
-        name_2 = item_2.text
+        item_1 = self.element.name_item_in_order_short.find_if_visible().text
+        item_2 = self.element.name_item_in_order_blouse.find_if_visible().text
         true_name_in_site_item_1 = "Faded Short Sleeve T-shirts"
         true_name_in_site_item_2 = "Blouse"
-        assert name_1 == true_name_in_site_item_1
-        assert name_2 == true_name_in_site_item_2
-        print(f"Item 1: {name_1}; Item 2: {name_2}")
+        assert item_1 == true_name_in_site_item_1
+        assert item_2 == true_name_in_site_item_2
+        print(f"Item 1: {item_1}; Item 2: {item_2}")
 
     def check_title_main_page(self):
         title = self.element.selenium.get_title_page()

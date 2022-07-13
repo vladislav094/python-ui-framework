@@ -5,6 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.select import Select
+
 
 
 
@@ -81,5 +83,9 @@ class SeleniumBase:
         return self.driver.title
 
     @staticmethod
-    def input(web_element, data: str):
+    def input(web_element: WebElement, data: str):
         web_element.send_keys(data)
+
+    def select_in_dropdown(self, value):
+        Select(self.find_if_present()).select_by_visible_text(value)
+

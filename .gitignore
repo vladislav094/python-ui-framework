@@ -18,6 +18,5 @@ geckodriver.log
 .DS_Store
 .AppleDouble
 
-stepick
-
+/framework/practice.py
 

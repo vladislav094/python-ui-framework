@@ -45,3 +45,9 @@ class AutomationPracticeSingInPage:
     """State and Country Drop-down list"""
     STATE_DROPDOWN_LIST = (By.XPATH, '//*[@id="id_state"]')  # Required field
     COUNTRY_DROPDOWN_LIST = (By.XPATH, '//*[@id="id_country"]')  # Required field
+
+    """Elements for assert after registration"""
+    LINK_MY_ACCOUNT = (By.XPATH, '//*[@id="header"]/div[2]/div/div/nav/div[1]/a/span')
+
+    """Element for assert negative case after authorization"""
+    TEXT_AUTHENTICATION_FAILED = (By.XPATH, ' //*[@id="center_column"]/div[1]/ol/li')
