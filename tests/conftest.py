@@ -9,7 +9,8 @@ def get_chrome_options_without_ui():
     options.binary_location = '/usr/bin/google-chrome'
     options.add_argument('--no-sandbox')
     options.add_argument('--headless')
-    options.add_argument('--disable-dev-shm-usage')
+    # options.add_argument('--disable-dev-shm-usage')
+    options.add_argument("--disable-setuid-sandbox")
     options.add_argument("--start-maximized")
     return options
 
