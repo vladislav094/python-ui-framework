@@ -38,6 +38,11 @@ Click of the link Create Item
 The file is located in the root of the project) (point 1)
 - Click button [Save] (point 2)
 ```
+![2022-07-13_23-10_19](https://user-images.githubusercontent.com/59145841/178829082-a5219d79-c5b8-4e85-95e3-790f582bcd84.png)
+```shell
+- On the job page click [Build] (point 1)
+```
+![2022-07-13_23-27_55](https://user-images.githubusercontent.com/59145841/178829224-698ab541-f17f-4cc0-8147-500f0800cfe2.png)
 
 
 
