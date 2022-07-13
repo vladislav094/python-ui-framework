@@ -1,7 +1,8 @@
 pipeline {
-    agent {
-        label 'master'
-        }
+       agent any
+//     agent {
+//         label 'master'
+//         }
     stages {
         stage("create docker image") {
             steps {
