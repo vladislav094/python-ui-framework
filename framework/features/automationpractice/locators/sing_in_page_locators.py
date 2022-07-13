@@ -50,4 +50,5 @@ class AutomationPracticeSingInPage:
     LINK_MY_ACCOUNT = (By.XPATH, '//*[@id="header"]/div[2]/div/div/nav/div[1]/a/span')
 
     """Element for assert negative case after authorization"""
-    TEXT_AUTHENTICATION_FAILED = (By.XPATH, ' //*[@id="center_column"]/div[1]/ol/li')
+    TEXT_AUTHENTICATION_FAILED = (By.XPATH, '//*[@id="center_column"]/div[1]/ol/li')
+    TEXT_CREATE_ACCOUNT_ERROR = (By.XPATH, '//*[@id="create_account_error"]/ol/li')

@@ -1,5 +1,7 @@
 import time
 
+import pytest
+
 from framework.features.automationpractice.data.data_user_for_registration import DataUserForRegistration
 from framework.features.automationpractice.locators.sing_in_page_locators import AutomationPracticeSingInPage
 from framework.utils import SeleniumBase
@@ -96,11 +98,17 @@ class SingInPageElement:
     def alert_danger_authentication(self):
         return SeleniumBase(driver=self.driver, locator=(self.locator_sign_in_page.TEXT_AUTHENTICATION_FAILED))
 
+    @property
+    def alert_create_account_mail(self):
+        return SeleniumBase(driver=self.driver, locator=(self.locator_sign_in_page.TEXT_CREATE_ACCOUNT_ERROR))
+
 class SignInPage:
     def __init__(self, driver):
         self.element = SingInPageElement(driver=driver)
         self.data_for_sign_in = DataUserForRegistration
         self.url = "http://automationpractice.com/index.php?controller=authentication&back=my-account"
+
+
 
     def open_page(self):
         self.element.selenium.go_to_url(self.url)
@@ -115,6 +123,12 @@ class SignInPage:
         self.element.selenium.input(password_field, self.data_for_sign_in.SAVED_PASSWORD_AFTER_REGISTRATION)
         button_for_sign_in = self.element.button_for_sign_in.find_if_visible()
         self.element.selenium.click_elt(button_for_sign_in)
+
+    def registration_with_invalid_email(self, email):
+        email_field = self.element.email_field_for_create.find_if_visible()
+        self.element.selenium.input(email_field, email)
+        button_for_create_account = self.element.button_for_create_an_account.find_if_visible()
+        self.element.selenium.click_elt(button_for_create_account)
 
 
     def registration_new_account(self):
@@ -160,3 +174,7 @@ class SignInPage:
     def assert_authentication_failed(self):
         text_with_authentication_failed = self.element.alert_danger_authentication.find_if_visible().text
         assert text_with_authentication_failed == f"Authentication failed."
+
+    def assert_invalid_email_address(self):
+        text_with_invalid_email_address = self.element.alert_create_account_mail.find_if_visible().text
+        assert text_with_invalid_email_address == f"Invalid email address."

@@ -6,9 +6,7 @@ fake = Faker()
 random_mail = fake.email()
 
 
-
 class DataUserForRegistration:
-
 	'''Credentials'''
 	EMAIL_ADDRESS = 'qweqwe123@qwe.qwe'
 	PASSWORD = 'qwe123'
@@ -36,6 +34,11 @@ class DataUserForRegistration:
 	MOBILE_PHONE = '+1 777 23 23 000'   #Required field
 	ALIAS_ADDRESS = 'Lenina street'     #Required field
 
+	EMAIL_ADDRESS_WITHOUT_DOMAIN = 'email_without_domain@'
+	EMAIL_ADDRESS_WITHOUT_AT = 'email_without_atgmail.com'
+	EMAIL_ADDRESS_WITHOUT_DOT = 'email_without_dot@gmailcom'
+	EMAIL_ADDRESS_WITH_SPEC_CHARACTER = 'email_with_t№$@gmailcom'
 
 
+class User:
 
