@@ -2,7 +2,7 @@
 import pytest
 from framework.features.automationpractice.automationpractice_app import AutomationpracticeApp
 
-@pytest.mark.usefixtures("set_with_ui")
+@pytest.mark.usefixtures("set_for_docker_without_ui")
 class TestRegistrationAuthorization:
 	def test_registration_new_user(self):
 		automation_practice = AutomationpracticeApp(self.driver)
