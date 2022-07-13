@@ -3,7 +3,7 @@ import pytest
 from framework.features.automationpractice.automationpractice_app import AutomationpracticeApp
 
 
-@pytest.mark.usefixtures("set_with_ui")
+@pytest.mark.usefixtures("set_for_docker_without_ui")
 class TestSuite:
     def test_add_to_order_and_check(self):
         automation_practice = AutomationpracticeApp(self.driver)

@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as chr_opt
 
-# @pytest.fixture(scope="class")
+
 @pytest.fixture
 def get_chrome_options_without_ui():
     options = chr_opt()
@@ -13,7 +13,7 @@ def get_chrome_options_without_ui():
     options.add_argument("--start-maximized")
     return options
 
-# @pytest.fixture(scope="class")
+
 @pytest.fixture
 def get_webdriver_without_ui(get_chrome_options_without_ui):
     options = get_chrome_options_without_ui
@@ -22,14 +22,14 @@ def get_webdriver_without_ui(get_chrome_options_without_ui):
     return driver
 
 
-# @pytest.fixture(scope="class")
+
 @pytest.fixture
 def get_actions_without_ui(get_webdriver_without_ui):
     actions = webdriver.ActionChains(get_webdriver_without_ui)
     return actions
 
 
-# @pytest.fixture(scope="class")
+
 @pytest.fixture
 def set_for_docker_without_ui(request, get_webdriver_without_ui):
     driver = get_webdriver_without_ui
