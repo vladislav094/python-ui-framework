@@ -13,7 +13,7 @@ from selenium.webdriver.support.select import Select
 class SeleniumBase:
     def __init__(self, driver, locator=None):
         self.driver = driver
-        self.__wait = WebDriverWait(driver, 15, 0.5)
+        self.__wait = WebDriverWait(driver, 30, 0.5)
         self.actions = webdriver.ActionChains(driver)
         self.locator = locator
 

@@ -18,7 +18,7 @@ def get_chrome_options_without_ui():
 def get_webdriver_without_ui(get_chrome_options_without_ui):
     options = get_chrome_options_without_ui
     driver = webdriver.Chrome(options=options)
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(30)
     return driver
 
 
@@ -53,7 +53,7 @@ def get_chrome_options_with_ui():
 def get_webdriver_with_ui(get_chrome_options_with_ui):
     options = get_chrome_options_with_ui
     driver = webdriver.Chrome(options=options)
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(30)
     return driver
 
 
