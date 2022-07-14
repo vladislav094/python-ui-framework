@@ -69,7 +69,11 @@ Jenkinsfile
 
 
 #### Jenkinsfile (file with (pipeline) commands for performing job steps)
-![2022-07-14_09-11_50](https://user-images.githubusercontent.com/59145841/178913015-74cb6da5-0e5c-43d9-8cb4-aff2ac3d859b.png)
+- The `--rm` flag deletes the docker container after execution (point 1)
+- The `-e` flag sets the environment variables `RUN_HEADLESS=True` and launches the docker container with the browser in the mode `headless` (point 2)
+- Flag `web_test` tag docker image (point 3)
+
+![2022-07-15_00-03_56](https://user-images.githubusercontent.com/59145841/179085883-4a5ce15f-8a97-4e94-b0c1-283c095fb154.png)
 
 #### Pytest.ini (configuration file for PyTest)
 The file includes the flag --reruns=5 - the number of repeated runs of tests when falling (because the tested site may crash, due to public access and heavy load) (point 1)
@@ -77,6 +81,7 @@ The file includes the flag --reruns=5 - the number of repeated runs of tests whe
 --reruns=5
 ```
 - For the specified flag to work, the "pytest-rerunfailures" plugin was added to the project
+
 ![2022-07-14_09-18_32](https://user-images.githubusercontent.com/59145841/178914902-b6df7aab-6f4b-4d77-9dd2-0adb20df839f.png)
 
 ### Via Docker (local)
@@ -110,7 +115,7 @@ docker build -t ui_framework .
 
 - Run a docker container with the execution of pytest test cases
 ```shell
-docker run ui_framework pytest
+docker run --rm -e RUN_HEADLESS=True ui_framework pytest
 ```
 ![2022-07-14_15-18_27](https://user-images.githubusercontent.com/59145841/178980611-5b427bb4-73a6-45c7-86d9-1c5c87598736.png)
 
