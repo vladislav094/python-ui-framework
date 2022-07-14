@@ -10,7 +10,7 @@ Copy the HTTPS path to this repository (point 1)
 - Open Jenkins in your local machine (point 1)
 Enter into the address bar of the browser http://localhost:8080 / (Jenkins uses port:8080) 
 - Create a new Job (point 2)
-Click of the link Create Item 
+Click of the link 'Create Item' 
 ```
 ![2022-07-13_22-25_11](https://user-images.githubusercontent.com/59145841/178815590-5352d7d2-0a4e-433b-98d8-5563c137577f.png)
 ```shell
@@ -40,7 +40,7 @@ The file is located in the root of the project) (point 1)
 ```
 ![2022-07-13_23-10_19](https://user-images.githubusercontent.com/59145841/178829082-a5219d79-c5b8-4e85-95e3-790f582bcd84.png)
 ```shell
-- On the job page click [Build] (point 1)
+- On the job page click of the link 'Build' (point 1)
 ```
 ![2022-07-13_23-27_55](https://user-images.githubusercontent.com/59145841/178829224-698ab541-f17f-4cc0-8147-500f0800cfe2.png)
 #### Viewing task results (step-by-step output of execution)
@@ -49,7 +49,7 @@ The file is located in the root of the project) (point 1)
 ```
 ![2022-07-13_23-50_07](https://user-images.githubusercontent.com/59145841/178908763-379b333e-5d2b-4a2e-9a36-5014e6523719.png)
 ```shell
-- Click on the [Console Output]
+- Click of the link 'Console Output'
 ```
 ![2022-07-13_23-50_30](https://user-images.githubusercontent.com/59145841/178909040-dfb14296-f6fa-4ada-83d1-426377bc5ddf.png)
 ```shell
