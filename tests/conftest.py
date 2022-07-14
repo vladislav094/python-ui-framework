@@ -10,8 +10,6 @@ def get_chrome_options_without_ui():
     options.add_argument('--no-sandbox')
     options.add_argument('--headless')
     options.add_argument('--disable-dev-shm-usage')
-    # options.add_argument("--disable-setuid-sandbox")
-    options.add_argument("--start-maximized")
     return options
 
 
@@ -19,6 +17,8 @@ def get_chrome_options_without_ui():
 def get_webdriver_without_ui(get_chrome_options_without_ui):
     options = get_chrome_options_without_ui
     driver = webdriver.Chrome(options=options)
+    driver.set_window_size(1920, 1080)
+    driver.maximize_window()
     driver.implicitly_wait(30)
     return driver
 
@@ -46,7 +46,6 @@ def set_for_docker_without_ui(request, get_webdriver_without_ui):
 @pytest.fixture
 def get_chrome_options_with_ui():
     options = chr_opt()
-    options.add_argument("--start-maximized")
     return options
 
 
@@ -54,6 +53,8 @@ def get_chrome_options_with_ui():
 def get_webdriver_with_ui(get_chrome_options_with_ui):
     options = get_chrome_options_with_ui
     driver = webdriver.Chrome(options=options)
+    driver.set_window_size(1920, 1080)
+    driver.maximize_window()
     driver.implicitly_wait(30)
     return driver
 
