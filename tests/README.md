@@ -38,6 +38,23 @@ Click of the link Create Item
 The file is located in the root of the project) (point 1)
 - Click button [Save] (point 2)
 ```
-
-
+![2022-07-13_23-10_19](https://user-images.githubusercontent.com/59145841/178829082-a5219d79-c5b8-4e85-95e3-790f582bcd84.png)
+```shell
+- On the job page click [Build] (point 1)
+```
+![2022-07-13_23-27_55](https://user-images.githubusercontent.com/59145841/178829224-698ab541-f17f-4cc0-8147-500f0800cfe2.png)
+#### Viewing task results (step-by-step output of execution)
+```shell
+- Click on a job in the build history (point 1)
+```
+![2022-07-13_23-50_07](https://user-images.githubusercontent.com/59145841/178908763-379b333e-5d2b-4a2e-9a36-5014e6523719.png)
+```shell
+- Click on the [Console Output]
+```
+![2022-07-13_23-50_30](https://user-images.githubusercontent.com/59145841/178909040-dfb14296-f6fa-4ada-83d1-426377bc5ddf.png)
+```shell
+- The page with the output of the execution steps
+```
+![2022-07-14_08-49_59](https://user-images.githubusercontent.com/59145841/178909684-92562cd5-7878-4e93-a794-8f9620cf6322.png)
+![2022-07-14_08-50_20](https://user-images.githubusercontent.com/59145841/178909702-a7dd8b29-1a51-46cd-9bbc-1c8e78497050.png)
 
