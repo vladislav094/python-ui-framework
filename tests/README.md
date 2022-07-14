@@ -112,5 +112,5 @@ docker run ui_framework pytest
 ```
 ![2022-07-14_15-18_27](https://user-images.githubusercontent.com/59145841/178980611-5b427bb4-73a6-45c7-86d9-1c5c87598736.png)
 
-#### Results of the test cases in the docker container
+#### Results run of the test cases in the docker container
 ![2022-07-14_17-13_52](https://user-images.githubusercontent.com/59145841/179003931-6f95f313-1f36-4ee9-8ed6-f7d6a6f4ed3c.png)
