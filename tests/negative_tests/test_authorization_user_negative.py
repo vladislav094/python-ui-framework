@@ -3,7 +3,7 @@ import pytest
 from framework.features.automationpractice.automationpractice_app import AutomationpracticeApp
 from framework.features.automationpractice.data.data_user_for_registration import DataUserForRegistration
 
-@pytest.mark.usefixtures("set_for_docker_without_ui")
+@pytest.mark.usefixtures("set_up_webdriver")
 class TestAuthorizationRegistrationNegative:
 	def test_authorization_with_invalid_credentials_negative(self):
 		automation_practice = AutomationpracticeApp(self.driver)
