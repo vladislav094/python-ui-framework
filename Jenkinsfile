@@ -1,8 +1,9 @@
 pipeline {
+
+    agent any
     environment {
         RUN_HEADLESS='True'
     }
-    agent any
 
     stages {
         stage("create docker image") {
