@@ -52,17 +52,20 @@ Jenkinsfile
 
 ![2022-07-13_23-27_55](https://user-images.githubusercontent.com/59145841/178829224-698ab541-f17f-4cc0-8147-500f0800cfe2.png)
 
-### Viewing task results (step-by-step output of execution):
+#### Viewing job results (step-by-step output of execution):
 - Click on a job in the build history (point 1)
+
 ![2022-07-13_23-50_07](https://user-images.githubusercontent.com/59145841/178908763-379b333e-5d2b-4a2e-9a36-5014e6523719.png)
 
 - Click of the link 'Console Output'
+ 
 ![2022-07-13_23-50_30](https://user-images.githubusercontent.com/59145841/178909040-dfb14296-f6fa-4ada-83d1-426377bc5ddf.png)
 
 - The page with the output of the execution steps
 
 ![2022-07-14_08-49_59](https://user-images.githubusercontent.com/59145841/178909684-92562cd5-7878-4e93-a794-8f9620cf6322.png)
 ![2022-07-14_08-50_20](https://user-images.githubusercontent.com/59145841/178909702-a7dd8b29-1a51-46cd-9bbc-1c8e78497050.png)
+
 #### Jenkinsfile (file with (pipeline) commands for performing job steps)
 ![2022-07-14_09-11_50](https://user-images.githubusercontent.com/59145841/178913015-74cb6da5-0e5c-43d9-8cb4-aff2ac3d859b.png)
 
@@ -80,6 +83,7 @@ The file includes the flag --reruns=5 - the number of repeated runs of tests whe
 https://github.com/vladislav094/python-ui-framework.git
 ```
 ![2022-07-13_22-06_38](https://user-images.githubusercontent.com/59145841/178812825-2535ac6c-c087-447f-a321-d7438e1b840d.png)
+
 - Open a terminal (Linux):
 ```shell
 command: [Ctrl + Alt + T]
@@ -101,9 +105,12 @@ git clone https://github.com/vladislav094/python-ui-framework.git .
 docker build -t ui_framework . 
 ```
 ![2022-07-14_14-31_00](https://user-images.githubusercontent.com/59145841/178972923-9bae4e40-709b-4156-a543-9f72c8ff132a.png)
+
 - Run a docker container with the execution of pytest test cases
 ```shell
 docker run ui_framework pytest
 ```
 ![2022-07-14_15-18_27](https://user-images.githubusercontent.com/59145841/178980611-5b427bb4-73a6-45c7-86d9-1c5c87598736.png)
 
+#### Results of the test cases in the docker container
+![2022-07-14_17-13_52](https://user-images.githubusercontent.com/59145841/179003931-6f95f313-1f36-4ee9-8ed6-f7d6a6f4ed3c.png)
