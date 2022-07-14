@@ -1,8 +1,6 @@
 pipeline {
 
-    agent {
-        any
-    }
+    agent any
 
     environment {
         RUN_HEADLESS = 'True'
