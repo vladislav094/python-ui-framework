@@ -1,5 +1,5 @@
 ## Installing and running a test framework on a local machine
-### Run GitHub repo in Jenkins (local)
+### Via Jenkins (local)
 The developer of this framework expects that Jenkins (CI) is installed and configured on your local machine
 #### To run a project inside Jenkins, you need:
 - Copy the HTTPS path to this repository (point 1)
@@ -74,7 +74,7 @@ The file includes the flag --reruns=5 - the number of repeated runs of tests whe
 - For the specified flag to work, the "pytest-rerunfailures" plugin was added to the project
 ![2022-07-14_09-18_32](https://user-images.githubusercontent.com/59145841/178914902-b6df7aab-6f4b-4d77-9dd2-0adb20df839f.png)
 
-### Run GitHub repo in Docker (local)
+### Via Docker (local)
 - Copy the HTTPS path to this repository (point 1)
 ```shell
 https://github.com/vladislav094/python-ui-framework.git
