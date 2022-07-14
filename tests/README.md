@@ -65,6 +65,8 @@ Jenkinsfile
 
 ![2022-07-14_08-49_59](https://user-images.githubusercontent.com/59145841/178909684-92562cd5-7878-4e93-a794-8f9620cf6322.png)
 ![2022-07-14_08-50_20](https://user-images.githubusercontent.com/59145841/178909702-a7dd8b29-1a51-46cd-9bbc-1c8e78497050.png)
+![2022-07-14_18-06_57](https://user-images.githubusercontent.com/59145841/179015143-ad72d967-43c4-45cd-a889-619729b704af.png)
+
 
 #### Jenkinsfile (file with (pipeline) commands for performing job steps)
 ![2022-07-14_09-11_50](https://user-images.githubusercontent.com/59145841/178913015-74cb6da5-0e5c-43d9-8cb4-aff2ac3d859b.png)
