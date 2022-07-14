@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         HEADLESS = '-e RUN_HEADLESS=True'
-            RUN_HEADLESS = 'True'
+        RUN_HEADLESS = 'True'
     }
 
     stages {
