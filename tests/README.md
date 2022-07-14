@@ -57,4 +57,12 @@ The file is located in the root of the project) (point 1)
 ```
 ![2022-07-14_08-49_59](https://user-images.githubusercontent.com/59145841/178909684-92562cd5-7878-4e93-a794-8f9620cf6322.png)
 ![2022-07-14_08-50_20](https://user-images.githubusercontent.com/59145841/178909702-a7dd8b29-1a51-46cd-9bbc-1c8e78497050.png)
+#### Jenkinsfile (file with (pipeline) commands for performing job steps)
+![2022-07-14_09-11_50](https://user-images.githubusercontent.com/59145841/178913015-74cb6da5-0e5c-43d9-8cb4-aff2ac3d859b.png)
+#### Pytest.ini (configuration file for PyTest)
+```shell
+The file includes the flag --reruns=5 - the number of repeated runs of tests when falling (because the tested site may crash, due to public access and heavy load) (point 1)
+For the specified flag to work, the "pytest-rerunfailures" plugin was added to the project
+```
+![2022-07-14_09-18_32](https://user-images.githubusercontent.com/59145841/178914902-b6df7aab-6f4b-4d77-9dd2-0adb20df839f.png)
 
