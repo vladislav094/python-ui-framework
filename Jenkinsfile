@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "========== start building image =========="
                 sh "docker build -t web_test ."
-                sh "environment"
+                sh "env"
 //                 sh "docker run --rm $HEADLESS web_test pytest"
 //                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest"
 //                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest -s tests/negative_tests/test_authorization_user_negative.py"
