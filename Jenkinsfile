@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        RUN_HEADLESS = 'True'
+        HEADLESS = 'RUN_HEADLESS=True'
     }
 
     stages {
