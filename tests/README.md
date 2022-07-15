@@ -117,7 +117,12 @@ docker build -t ui_framework .
 ```shell
 docker run --rm -e RUN_HEADLESS=True ui_framework pytest
 ```
-![2022-07-14_15-18_27](https://user-images.githubusercontent.com/59145841/178980611-5b427bb4-73a6-45c7-86d9-1c5c87598736.png)
+- The `--rm` flag deletes the docker container after execution
+- The `-e` flag sets the environment variables `RUN_HEADLESS=True` and launches the docker container with the browser in the mode `headless`
+- The `ui_framework` is a tag for the docker image
+
+![2022-07-15_09-39_58](https://user-images.githubusercontent.com/59145841/179166246-442df012-0bef-431b-aa32-d42fce6295db.png)
 
 #### Results run of the test cases in the docker container
+
 ![2022-07-14_17-13_52](https://user-images.githubusercontent.com/59145841/179003931-6f95f313-1f36-4ee9-8ed6-f7d6a6f4ed3c.png)
