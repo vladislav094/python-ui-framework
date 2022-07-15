@@ -31,7 +31,7 @@ ui_framework
 ![2022-07-13_22-35_44](https://user-images.githubusercontent.com/59145841/178818485-23d36038-e9a3-4397-b182-15a8a40e9cb7.png)
 - Expand the drop-down list: SCM (point 1)
 - In the drop-down list select: Git (point 2)
-- In the input field "Repository URL" input HTTPS path for GitHub repo (first step in README.md):
+- In the input field "Repository URL" input HTTPS path for GitHub repo (point 3):
 ```shell
 https://github.com/vladislav094/python-ui-framework.git 
 ```
