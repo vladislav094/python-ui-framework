@@ -13,7 +13,6 @@ pipeline {
             steps {
                 echo "========== start building image =========="
                    sh "env"
-                   sh "allure --version"
                    sh "pytest -s tests/negative_tests/test_authorization_user_negative.py::TestAuthorizationRegistrationNegative::test_authorization_with_invalid_credentials_negative --alluredir='$WORKSPACE/allure_reports'"
 //                 sh "docker build -t web_test ."
 //                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest -s tests/negative_tests/test_authorization_user_negative.py"
