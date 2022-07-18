@@ -8,8 +8,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
 
 
-
-
 class SeleniumBase:
     def __init__(self, driver, locator=None):
         self.driver = driver
