@@ -36,6 +36,3 @@ RUN poetry config virtualenvs.create false \
 COPY framework ./framework
 COPY tests ./tests
 COPY pytest.ini ./
-ENTRYPOINT ["pytest"]
-CMD ["-s", "tests/negative_tests/test_authorization_user_negative.py"]
-
