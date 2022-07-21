@@ -13,7 +13,8 @@ screenshots/
 *.pyc
 geckodriver.log
 .vscode/settings.json
-
+allure-report
+allure-results
 
 .DS_Store
 .AppleDouble
