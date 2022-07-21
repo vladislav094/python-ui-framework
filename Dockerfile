@@ -17,6 +17,9 @@ RUN export chrome_version=$(google-chrome --version | grep -P -o --regexp='\d+\.
     wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_$chrome_version`/chromedriver_linux64.zip
 RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
+
+#RUN apt-get install -y allure
+
 # Install poetry.
 RUN pip install "poetry==$POETRY_VERSION"
 
@@ -24,11 +27,19 @@ RUN pip install "poetry==$POETRY_VERSION"
 WORKDIR /code
 COPY poetry.lock pyproject.toml ./
 
+#Install Allure
+RUN apt-get -y update && \
+    mkdir allure && \
+    cd allure &&wget https://github.com/allure-framework/allure2/releases/download/2.17.2/allure-2.17.2.zip && \
+    unzip allure-2.17.2.zip
+
+
 # Install dependencies via Poetry.
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
 # Copy the source code into the image.
+RUN mkdir allure-report
 COPY framework ./framework
 COPY tests ./tests
 COPY pytest.ini ./
