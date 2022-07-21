@@ -31,7 +31,7 @@ COPY poetry.lock pyproject.toml ./
 RUN apt-get -y update && \
     mkdir allure && \
     cd allure &&wget https://github.com/allure-framework/allure2/releases/download/2.17.2/allure-2.17.2.zip && \
-    unzip allure-2.17.2.zip \
+    unzip allure-2.17.2.zip
 
 
 # Install dependencies via Poetry.
