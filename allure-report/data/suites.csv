@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jul 21 12:57:49 MSK 2022","Thu Jul 21 12:58:19 MSK 2022","29723","tests.negative_tests","test_authorization_user_negative","TestAuthorizationRegistrationNegative","","","test_authorization_with_invalid_credentials_negative","In that test we try login with invalid credentials"
