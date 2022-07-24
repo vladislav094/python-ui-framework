@@ -1,0 +1,542 @@
+{
+  "uid" : "c3485519036a7a9b",
+  "name" : "test_authorization_with_invalid_credentials_negative",
+  "fullName" : "tests.negative_tests.test_authorization_user_negative.TestAuthorizationRegistrationNegative#test_authorization_with_invalid_credentials_negative",
+  "historyId" : "c1c8d9ab315ced79f61d6f2b0f6dbe24",
+  "time" : {
+    "start" : 1658675933612,
+    "stop" : 1658675933612,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+  "statusTrace" : "@pytest.fixture\n    def _get_chrome_options() -> webdriver.ChromeOptions:\n    \n            \"\"\"\n            Creates a set of options for running the Chrome browser.\n            Runs Chrome in headless mode depending on the value of the RUN_HEADLESS environment variable.\n            :return: A set of options to run the Chrome browser with.\n            \"\"\"\n    \n            chrome_options = webdriver.ChromeOptions()\n>           run_headless = should_run_headless()\n\ntests/conftest.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nframework/common/env_vars.py:9: in should_run_headless\n    return bool(_get_env_var(\"RUN_HEADLESS\") == \"True\")\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nname = 'RUN_HEADLESS', default = ''\n\n    def _get_env_var(name: str, default: str = \"\"):\n        \"\"\"\n        Gets the value of an environment variable. If the environment variable does not exist, it throws a ValueError.\n        :param name: The name of the environment variable to fetch.\n        :param default: Option for setting a default value to return if the env variable is not found.\n        :return: The value of an environment variable.\n        \"\"\"\n        if name not in os.environ and not default:\n>           raise ValueError(f\"The {name} environment variable has not been set.\")\nE           ValueError: The RUN_HEADLESS environment variable has not been set.\n\nframework/common/env_vars.py:20: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 42,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Allure Epic"
+  }, {
+    "name" : "feature",
+    "value" : "Demo Feature"
+  }, {
+    "name" : "story",
+    "value" : "Passed Example"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('set_up_webdriver')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.negative_tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_authorization_user_negative"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuthorizationRegistrationNegative"
+  }, {
+    "name" : "host",
+    "value" : "vladislav-G3-3579"
+  }, {
+    "name" : "thread",
+    "value" : "44170-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.negative_tests.test_authorization_user_negative"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://example.org/tms/2",
+    "url" : "https://example.org/tms/2",
+    "type" : "test_case"
+  }, {
+    "name" : "https://example.org/issue/1",
+    "url" : "https://example.org/issue/1",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "40c202d1404fa3dd",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675933557,
+        "stop" : 1658675933557,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bb25de7a494e5d91",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675933502,
+        "stop" : 1658675933502,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b4be43b2bfa11ecd",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675933449,
+        "stop" : 1658675933449,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ee399b47953712c5",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675933396,
+        "stop" : 1658675933396,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1fac7f15f377c948",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675933259,
+        "stop" : 1658675933259,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "88c13475771c2f15",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675878477,
+        "stop" : 1658675878477,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "aea5c83b1ba21989",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675878424,
+        "stop" : 1658675878424,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3690b9473b3d39b8",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675878367,
+        "stop" : 1658675878367,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b282f55f28cbef40",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675878312,
+        "stop" : 1658675878312,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9a2fe5e3d70fc1e6",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675878261,
+        "stop" : 1658675878261,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d6457d657fe7d70d",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658675878144,
+        "stop" : 1658675878144,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1c8d9d84708afa3a",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658627054782,
+        "stop" : 1658627054782,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1ddd3b1171000807",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658627054757,
+        "stop" : 1658627054757,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b19a1804661a3a2d",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658627054733,
+        "stop" : 1658627054733,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b6cb85952bd4be9f",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658627054710,
+        "stop" : 1658627054710,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "902868650553a1b",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658627054689,
+        "stop" : 1658627054689,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c2da90c5ac322137",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658627054622,
+        "stop" : 1658627054622,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5ce70cde8ccdd212",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658626519114,
+        "stop" : 1658626540998,
+        "duration" : 21884
+      }
+    }, {
+      "uid" : "14d61580cd828765",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626496170,
+        "stop" : 1658626496170,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "99f2e291972c0fb9",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626496148,
+        "stop" : 1658626496148,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a33dd3f798a8ad89",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626496126,
+        "stop" : 1658626496126,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "79b3af3b0fb29258",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626496103,
+        "stop" : 1658626496103,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "91874b977e239c11",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626496082,
+        "stop" : 1658626496082,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8de3c18ce0aefa9c",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626496028,
+        "stop" : 1658626496028,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "14decc425662dbf",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626473259,
+        "stop" : 1658626473259,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9127f0ee9b7e3ab9",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626473237,
+        "stop" : 1658626473237,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "aabbf259b08b90ad",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626473215,
+        "stop" : 1658626473215,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c072cae08e0830f6",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626473193,
+        "stop" : 1658626473193,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4f9de4b1e19a2313",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626473172,
+        "stop" : 1658626473172,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "669ce65dcd86ead3",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626473118,
+        "stop" : 1658626473118,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "67d46a0882536907",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434914,
+        "stop" : 1658624434914,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2aa358108ff94947",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434884,
+        "stop" : 1658624434884,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2a1b4879f8e9869c",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434860,
+        "stop" : 1658624434860,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d8b30a8adb3c8239",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434836,
+        "stop" : 1658624434836,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "269078aaf4436d85",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434810,
+        "stop" : 1658624434810,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3d7f45b816f6b873",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434753,
+        "stop" : 1658624434753,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b1f055c58622de5f",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658623894125,
+        "stop" : 1658623894125,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2af0ce9a5ce61b8a",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658623894101,
+        "stop" : 1658623894101,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5fa88e74a54f6a66",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658623894080,
+        "stop" : 1658623894080,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b4fd6adace35291e",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658623894057,
+        "stop" : 1658623894057,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b59c6a89919aa3f6",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658623894034,
+        "stop" : 1658623894034,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cf488b6d985bde26",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658623893981,
+        "stop" : 1658623893981,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "d6a7aea87c63cfc0",
+        "reportUrl" : "../6/index.html#testresult/d6a7aea87c63cfc0",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+        "time" : {
+          "start" : 1658627054782,
+          "stop" : 1658627054782,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "956905e066c99840",
+        "reportUrl" : "../5/index.html#testresult/956905e066c99840",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658626519114,
+          "stop" : 1658626540998,
+          "duration" : 21884
+        }
+      }, {
+        "uid" : "96e1ba46751905d1",
+        "reportUrl" : "../4/index.html#testresult/96e1ba46751905d1",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+        "time" : {
+          "start" : 1658626496170,
+          "stop" : 1658626496170,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "7dd722cd63df55c0",
+        "reportUrl" : "../3/index.html#testresult/7dd722cd63df55c0",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+        "time" : {
+          "start" : 1658626496170,
+          "stop" : 1658626496170,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ce2566b7e35b3c94",
+        "reportUrl" : "../2/index.html#testresult/ce2566b7e35b3c94",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+        "time" : {
+          "start" : 1658626473259,
+          "stop" : 1658626473259,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "85439eadbb92b431",
+        "reportUrl" : "../1/index.html#testresult/85439eadbb92b431",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+        "time" : {
+          "start" : 1658624434914,
+          "stop" : 1658624434914,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f00118e41498614f",
+        "status" : "broken",
+        "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+        "time" : {
+          "start" : 1658624434914,
+          "stop" : 1658624434914,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.usefixtures('set_up_webdriver')" ]
+  },
+  "source" : "c3485519036a7a9b.json",
+  "parameterValues" : [ ]
+}

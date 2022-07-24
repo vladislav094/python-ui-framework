@@ -1,0 +1,7 @@
+[ {
+  "values" : [ "myvalue" ],
+  "name" : "myvar"
+}, {
+  "values" : [ "myvalue2" ],
+  "name" : "myvar2"
+} ]

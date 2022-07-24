@@ -5,8 +5,13 @@ from framework.features.automationpractice.data.data_user_for_registration impor
 
 @pytest.mark.usefixtures("set_up_webdriver")
 class TestAuthorizationRegistrationNegative:
-	@allure.description("In that test we try login with invalid credentials")
-	@allure.severity(severity_level="CRITICAL")
+	# @allure.description("In that test we try login with invalid credentials")
+	# @allure.severity(severity_level="CRITICAL")
+	@allure.epic('Allure Epic')
+	@allure.feature('Demo Feature')
+	@allure.story('Passed Example')
+	@allure.issue('https://example.org/issue/1')
+	@allure.testcase('https://example.org/tms/2')
 	def test_authorization_with_invalid_credentials_negative(self):
 		automation_practice = AutomationpracticeApp(self.driver)
 		sign_in = automation_practice.sign_in_page

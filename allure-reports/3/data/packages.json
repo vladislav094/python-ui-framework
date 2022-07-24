@@ -1,0 +1,26 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests.negative_tests.test_authorization_user_negative",
+    "children" : [ {
+      "name" : "test_authorization_with_invalid_credentials_negative",
+      "uid" : "7dd722cd63df55c0",
+      "parentUid" : "4f288c1edf028af503810aa5f45fb963",
+      "status" : "broken",
+      "time" : {
+        "start" : 1658626496170,
+        "stop" : 1658626496170,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 23,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "tests.negative_tests.test_authorization_user_negative"
+  } ]
+}

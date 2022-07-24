@@ -1,0 +1,42 @@
+{
+  "c1c8d9ab315ced79f61d6f2b0f6dbe24" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "ce2566b7e35b3c94",
+      "reportUrl" : "../2/index.html#testresult/ce2566b7e35b3c94",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658626473259,
+        "stop" : 1658626473259,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "85439eadbb92b431",
+      "reportUrl" : "../1/index.html#testresult/85439eadbb92b431",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434914,
+        "stop" : 1658624434914,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f00118e41498614f",
+      "status" : "broken",
+      "statusDetails" : "ValueError: The RUN_HEADLESS environment variable has not been set.",
+      "time" : {
+        "start" : 1658624434914,
+        "stop" : 1658624434914,
+        "duration" : 0
+      }
+    } ]
+  }
+}

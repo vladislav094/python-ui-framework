@@ -1,0 +1,22 @@
+[ {
+  "buildOrder" : 2,
+  "reportUrl" : "../2/index.html",
+  "reportName" : "default",
+  "data" : {
+    "run" : 1,
+    "retry" : 17
+  }
+}, {
+  "buildOrder" : 1,
+  "reportUrl" : "../1/index.html",
+  "reportName" : "default",
+  "data" : {
+    "run" : 1,
+    "retry" : 11
+  }
+}, {
+  "data" : {
+    "run" : 1,
+    "retry" : 11
+  }
+} ]

@@ -1,0 +1,772 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "vladislav-G3-3579",
+    "children" : [ {
+      "name" : "696078-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "5ce70cde8ccdd212",
+        "parentUid" : "a68fd581fa992a98ac5d6d7f8187bfe4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658626519114,
+          "stop" : 1658626540998,
+          "duration" : 21884
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a68fd581fa992a98ac5d6d7f8187bfe4"
+    }, {
+      "name" : "43222-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "b282f55f28cbef40",
+        "parentUid" : "50da55c567f230189948db44584b8167",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675878312,
+          "stop" : 1658675878312,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "3690b9473b3d39b8",
+        "parentUid" : "50da55c567f230189948db44584b8167",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675878367,
+          "stop" : 1658675878367,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "d6457d657fe7d70d",
+        "parentUid" : "50da55c567f230189948db44584b8167",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675878144,
+          "stop" : 1658675878144,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "aea5c83b1ba21989",
+        "parentUid" : "50da55c567f230189948db44584b8167",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675878424,
+          "stop" : 1658675878424,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "9a2fe5e3d70fc1e6",
+        "parentUid" : "50da55c567f230189948db44584b8167",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675878261,
+          "stop" : 1658675878261,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "88c13475771c2f15",
+        "parentUid" : "50da55c567f230189948db44584b8167",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675878477,
+          "stop" : 1658675878477,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "50da55c567f230189948db44584b8167"
+    }, {
+      "name" : "693305-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "79b3af3b0fb29258",
+        "parentUid" : "f8e8a093ef1d8cdb8bc7bc052d2d7c8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626496103,
+          "stop" : 1658626496103,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "91874b977e239c11",
+        "parentUid" : "f8e8a093ef1d8cdb8bc7bc052d2d7c8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626496082,
+          "stop" : 1658626496082,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "8de3c18ce0aefa9c",
+        "parentUid" : "f8e8a093ef1d8cdb8bc7bc052d2d7c8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626496028,
+          "stop" : 1658626496028,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "a33dd3f798a8ad89",
+        "parentUid" : "f8e8a093ef1d8cdb8bc7bc052d2d7c8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626496126,
+          "stop" : 1658626496126,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "14d61580cd828765",
+        "parentUid" : "f8e8a093ef1d8cdb8bc7bc052d2d7c8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626496170,
+          "stop" : 1658626496170,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "99f2e291972c0fb9",
+        "parentUid" : "f8e8a093ef1d8cdb8bc7bc052d2d7c8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626496148,
+          "stop" : 1658626496148,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f8e8a093ef1d8cdb8bc7bc052d2d7c8c"
+    }, {
+      "name" : "592219-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "d8b30a8adb3c8239",
+        "parentUid" : "b529595da956fc6b2ae4bd9ce6047def",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658624434836,
+          "stop" : 1658624434836,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "2a1b4879f8e9869c",
+        "parentUid" : "b529595da956fc6b2ae4bd9ce6047def",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658624434860,
+          "stop" : 1658624434860,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "3d7f45b816f6b873",
+        "parentUid" : "b529595da956fc6b2ae4bd9ce6047def",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658624434753,
+          "stop" : 1658624434753,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "67d46a0882536907",
+        "parentUid" : "b529595da956fc6b2ae4bd9ce6047def",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658624434914,
+          "stop" : 1658624434914,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "269078aaf4436d85",
+        "parentUid" : "b529595da956fc6b2ae4bd9ce6047def",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658624434810,
+          "stop" : 1658624434810,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "2aa358108ff94947",
+        "parentUid" : "b529595da956fc6b2ae4bd9ce6047def",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658624434884,
+          "stop" : 1658624434884,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b529595da956fc6b2ae4bd9ce6047def"
+    }, {
+      "name" : "722736-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "b19a1804661a3a2d",
+        "parentUid" : "419dcbeb98bbaf2692a2caa5de632fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658627054733,
+          "stop" : 1658627054733,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "902868650553a1b",
+        "parentUid" : "419dcbeb98bbaf2692a2caa5de632fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658627054689,
+          "stop" : 1658627054689,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "c2da90c5ac322137",
+        "parentUid" : "419dcbeb98bbaf2692a2caa5de632fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658627054622,
+          "stop" : 1658627054622,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "b6cb85952bd4be9f",
+        "parentUid" : "419dcbeb98bbaf2692a2caa5de632fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658627054710,
+          "stop" : 1658627054710,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "1ddd3b1171000807",
+        "parentUid" : "419dcbeb98bbaf2692a2caa5de632fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658627054757,
+          "stop" : 1658627054757,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "1c8d9d84708afa3a",
+        "parentUid" : "419dcbeb98bbaf2692a2caa5de632fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658627054782,
+          "stop" : 1658627054782,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "419dcbeb98bbaf2692a2caa5de632fb0"
+    }, {
+      "name" : "692793-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "aabbf259b08b90ad",
+        "parentUid" : "2bb6751bab2dc8d6cae90a9d46d0d85f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626473215,
+          "stop" : 1658626473215,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "c072cae08e0830f6",
+        "parentUid" : "2bb6751bab2dc8d6cae90a9d46d0d85f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626473193,
+          "stop" : 1658626473193,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "14decc425662dbf",
+        "parentUid" : "2bb6751bab2dc8d6cae90a9d46d0d85f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626473259,
+          "stop" : 1658626473259,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "4f9de4b1e19a2313",
+        "parentUid" : "2bb6751bab2dc8d6cae90a9d46d0d85f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626473172,
+          "stop" : 1658626473172,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "669ce65dcd86ead3",
+        "parentUid" : "2bb6751bab2dc8d6cae90a9d46d0d85f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626473118,
+          "stop" : 1658626473118,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "9127f0ee9b7e3ab9",
+        "parentUid" : "2bb6751bab2dc8d6cae90a9d46d0d85f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658626473237,
+          "stop" : 1658626473237,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2bb6751bab2dc8d6cae90a9d46d0d85f"
+    }, {
+      "name" : "565935-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "b1f055c58622de5f",
+        "parentUid" : "ffc6ea0888ffce8c378676ff70f5ac5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658623894125,
+          "stop" : 1658623894125,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "b59c6a89919aa3f6",
+        "parentUid" : "ffc6ea0888ffce8c378676ff70f5ac5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658623894034,
+          "stop" : 1658623894034,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "b4fd6adace35291e",
+        "parentUid" : "ffc6ea0888ffce8c378676ff70f5ac5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658623894057,
+          "stop" : 1658623894057,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "cf488b6d985bde26",
+        "parentUid" : "ffc6ea0888ffce8c378676ff70f5ac5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658623893981,
+          "stop" : 1658623893981,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "2af0ce9a5ce61b8a",
+        "parentUid" : "ffc6ea0888ffce8c378676ff70f5ac5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658623894101,
+          "stop" : 1658623894101,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "5fa88e74a54f6a66",
+        "parentUid" : "ffc6ea0888ffce8c378676ff70f5ac5e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658623894080,
+          "stop" : 1658623894080,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ffc6ea0888ffce8c378676ff70f5ac5e"
+    }, {
+      "name" : "44170-MainThread",
+      "children" : [ {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "b4be43b2bfa11ecd",
+        "parentUid" : "288a33da43f7f75842565a6c04de3aca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675933449,
+          "stop" : 1658675933449,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "40c202d1404fa3dd",
+        "parentUid" : "288a33da43f7f75842565a6c04de3aca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675933557,
+          "stop" : 1658675933557,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "c3485519036a7a9b",
+        "parentUid" : "288a33da43f7f75842565a6c04de3aca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675933612,
+          "stop" : 1658675933612,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 42,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "1fac7f15f377c948",
+        "parentUid" : "288a33da43f7f75842565a6c04de3aca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675933259,
+          "stop" : 1658675933259,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "bb25de7a494e5d91",
+        "parentUid" : "288a33da43f7f75842565a6c04de3aca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675933502,
+          "stop" : 1658675933502,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_authorization_with_invalid_credentials_negative",
+        "uid" : "ee399b47953712c5",
+        "parentUid" : "288a33da43f7f75842565a6c04de3aca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1658675933396,
+          "stop" : 1658675933396,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "288a33da43f7f75842565a6c04de3aca"
+    } ],
+    "uid" : "e4f1dd9500df6f47692e7667d06c463a"
+  } ]
+}

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "ce2566b7e35b3c94",
+  "name" : "test_authorization_with_invalid_credentials_negative",
+  "time" : {
+    "start" : 1658626473259,
+    "stop" : 1658626473259,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

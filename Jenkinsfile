@@ -3,12 +3,10 @@ pipeline {
 //     {
 //         dockerfile true
 //     }
-
     environment {
         RUN_HEADLESS = 'True'
         HEADLESS = '-e RUN_HEADLESS=True'
     }
-
     stages {
         stage("create docker image") {
             steps {

@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jul 24 01:35:19 UTC 2022","Sun Jul 24 01:35:40 UTC 2022","21884","tests.negative_tests","test_authorization_user_negative","TestAuthorizationRegistrationNegative","","","test_authorization_with_invalid_credentials_negative",""
