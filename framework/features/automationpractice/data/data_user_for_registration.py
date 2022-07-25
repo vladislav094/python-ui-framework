@@ -37,5 +37,5 @@ class DataUserForRegistration:
 	EMAIL_ADDRESS_WITHOUT_DOMAIN = 'email_without_domain@'
 	EMAIL_ADDRESS_WITHOUT_AT = 'email_without_atgmail.com'
 	EMAIL_ADDRESS_WITHOUT_DOT = 'email_without_dot@gmailcom'
-	EMAIL_ADDRESS_WITH_SPEC_CHARACTER = 'email_with_t№$@gmailcom'
+	EMAIL_ADDRESS_WITH_SPEC_CHARACTER = 'email_with_spec_chraracter_№$@gmailcom'
 
