@@ -22,14 +22,15 @@ RUN pip install "poetry==$POETRY_VERSION"
 
 # Copy the poetry files to speed up builds.
 WORKDIR /code
-COPY poetry.lock pyproject.toml ./
+COPY poetry.lock pyproject.toml docker-compose.yml ./
 
 # Install dependencies via Poetry.
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
 # Copy the source code into the image.
-RUN mkdir allure-report
+RUN mkdir allure-reports
+RUN mkdir allure-results
 COPY framework ./framework
 COPY tests ./tests
 COPY pytest.ini ./
