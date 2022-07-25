@@ -20,7 +20,7 @@ pipeline {
                 sh "docker run \
                     -e RUN_HEADLESS=True \
                     --name example1 \
-                    -- rm \
+                    --rm \
                     --volume ${WORKSPACE}/:code/allure-results/ \
                     web_test pytest -s tests/negative_tests/test_authorization_user_negative.py"
 //                 sh "docker cp example1:/code/allure-results/ ${WORKSPACE}/"
