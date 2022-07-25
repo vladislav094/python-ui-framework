@@ -14,17 +14,13 @@ pipeline {
             steps {
                 echo "========== start building image =========="
                    sh "env"
-//                    sh "pytest -s tests/negative_tests/test_authorization_user_negative.py::TestAuthorizationRegistrationNegative::test_authorization_with_invalid_credentials_negative --alluredir=${WORKSPACE}/allure-report"
                 sh "docker build -t web_test ."
-//                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest -s tests/negative_tests/test_authorization_user_negative.py"
                 sh "docker run \
                     -e RUN_HEADLESS=True \
                     --name example1 \
                     --rm \
                     --volume ${WORKSPACE}/allure-results/:/code/allure-results/ \
                     web_test pytest -s tests/negative_tests/test_authorization_user_negative.py"
-//                 sh "docker cp example1:/code/allure-results/ ${WORKSPACE}/"
-//                 sh "docker rm example1"
 //                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest -s tests/positive_tests/test_making_orders_positive.py"
 //                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest -s tests/positive_tests/test_search_module_operation.py"
 //                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest -s tests/positive_tests/test_registration_and_authorization_positive.py"
