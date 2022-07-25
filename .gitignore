@@ -13,11 +13,15 @@ screenshots/
 *.pyc
 geckodriver.log
 .vscode/settings.json
-allure-report
+allure-reports
 allure-results
 
 .DS_Store
 .AppleDouble
 
 /framework/practice.py
+.pytest_cache
+tests/.pytest_cache
+tests/negative_tests/.pytest_cache
+tests/positive_tests/.pytest_cache
 
