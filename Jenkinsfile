@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage("create docker image") {
             steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                catchError{
                 echo "========== start building image =========="
                    sh "env"
                    sh "docker rm example1"
