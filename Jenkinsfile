@@ -12,7 +12,7 @@ pipeline {
                 catchError{
                 echo "========== start building image =========="
                    sh "env"
-                   sh "docker rm example1"
+//                    sh "docker rm example1"
                 sh "docker build -t web_test ."
                 sh "docker run \
                     -e RUN_HEADLESS=True \
