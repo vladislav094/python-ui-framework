@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage("create docker image") {
             steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 echo "========== start building image =========="
                    sh "env"
                    sh "docker rm example1"
@@ -27,6 +28,7 @@ pipeline {
 //                 sh "docker run --rm -e RUN_HEADLESS=True web_test pytest -s tests/positive_tests/test_registration_and_authorization_positive.py"
                 echo "========== finish building image =========="
             }
+        }
         }
         stage('reports') {
             steps {
