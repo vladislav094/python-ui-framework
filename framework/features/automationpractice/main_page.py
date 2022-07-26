@@ -54,6 +54,10 @@ class MainPage:
         title = self.element.selenium.get_title_page()
         assert title == "Order - My Store"
 
+    def check_title_main_page_wrong(self):
+        title = self.element.selenium.get_title_page()
+        assert title == "My Store1"
+
     def fill_search_field_and_assert_result(self):
         search_field = self.element.search_field.find_if_visible()
         self.element.selenium.input(search_field, self.data_product.PRODUCT_WITH_NAME_BLOUSE)
