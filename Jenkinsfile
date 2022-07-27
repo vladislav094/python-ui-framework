@@ -5,7 +5,7 @@ pipeline {
         RUN_HEADLESS = 'True'
         HEADLESS = '-e RUN_HEADLESS=True'
     }
-//     stages {
+    stages {
 //         stage("run selenium-grid") {
 //             steps {
 //                 sh "docker run -d -p 4444:4444 -p 7900:7900 --shm-size='2g' selenium/standalone-chrome:4.3.0-20220726"
