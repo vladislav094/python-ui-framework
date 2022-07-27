@@ -49,7 +49,7 @@ def set_up_webdriver(request, get_webdriver):
     if request.cls is not None:
         request.cls.driver = driver
     yield driver
-    # driver.quit()
+    driver.quit()
 
 
 @pytest.fixture
