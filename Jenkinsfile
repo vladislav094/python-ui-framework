@@ -58,6 +58,8 @@ pipeline {
         HEADLESS = '-e RUN_HEADLESS=True'
     }
 
+    stages {
+
     stage("Clone repository") {
         checkout scm
     }
@@ -91,5 +93,6 @@ pipeline {
         allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
         }
     }
+}
 }
 }
