@@ -89,6 +89,7 @@ pipeline {
                 pytest tests/negative_tests/test_general_checks.py::TestGeneralChecks::test_check_wrong_title_of_the_page"
     }
     }
+    }
 
     stage('Remove image') {
         steps {
