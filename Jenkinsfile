@@ -61,17 +61,24 @@ pipeline {
     stages {
 
     stage("Clone repository") {
+        steps {
         checkout scm
     }
-
+    }
     stage("Docker Setup") {
+        steps {
         sh "docker-compose up -d chrome"
-            }
+    }
+    }
+
     stage('Build image') {
+        steps {
         sh "docker build -t web_test ."
+    }
     }
 
     stage('Execute script') {
+        steps {
         catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
             sh "docker run \
                 -e RUN_HEADLESS=True \
@@ -80,19 +87,28 @@ pipeline {
                 --volume ${WORKSPACE}/allure-results/:/code/allure-results/ \
                 web_test \
                 pytest tests/negative_tests/test_general_checks.py::TestGeneralChecks::test_check_wrong_title_of_the_page"
+    }
+    }
 
     stage('Remove image') {
+        steps {
         sh 'docker rmi web_test -f'
-            }
+    }
+    }
 
     stage('Teardown docker-compose') {
+        steps {
         sh 'docker-compose down --rmi local'
-        }
+    }
+    }
 
     stage('Allure Report') {
-        allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
-        }
+        steps {
+            script {
+            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
     }
+    }
+
 }
 }
 }
