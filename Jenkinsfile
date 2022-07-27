@@ -82,6 +82,7 @@ pipeline {
         catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
             sh "docker run \
                 -e RUN_HEADLESS=True \
+                --network='host' \
                 --name example1 \
                 --rm \
                 --volume ${WORKSPACE}/allure-results/:/code/allure-results/ \
