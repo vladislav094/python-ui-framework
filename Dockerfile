@@ -32,5 +32,6 @@ RUN poetry config virtualenvs.create false \
 RUN mkdir allure-report
 COPY framework ./framework
 COPY tests ./tests
+COPY jenkinsfiles ./jenkinsfiles
 COPY pytest.ini ./
 

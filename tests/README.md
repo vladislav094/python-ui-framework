@@ -43,7 +43,7 @@ https://github.com/vladislav094/python-ui-framework.git
 - In the input field "Script Path" enter:     
 (This is a pipeline file that contains steps with commands: building a docker image, launching a docker container, as well as running tests of files with PyTest.The file is located in the root of the project) (point 1)
 ```shell
-Jenkinsfile
+JenkinsfileOutdated
 ```
 - Click button [Save] (point 2)
 ![2022-07-13_23-10_19](https://user-images.githubusercontent.com/59145841/178829082-a5219d79-c5b8-4e85-95e3-790f582bcd84.png)
