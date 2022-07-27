@@ -5,8 +5,12 @@ pipeline {
         RUN_HEADLESS = 'True'
         HEADLESS = '-e RUN_HEADLESS=True'
     }
-
     stages {
+        stage("run selenium-grid") {
+            steps {
+                sg "docker run -d -p 4444:4444 -p 7900:7900 --shm-size='2g' selenium/standalone-chrome:4.3.0-20220726"
+            }
+        }
         stage("create docker image") {
             steps {
                 catchError{
