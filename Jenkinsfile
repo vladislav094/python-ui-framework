@@ -65,11 +65,11 @@ pipeline {
         checkout scm
     }
     }
-    stage("Docker Setup") {
-        steps {
-        sh "docker-compose up -d chrome"
-    }
-    }
+//     stage("Docker Setup") {
+//         steps {
+//         sh "docker-compose up -d chrome"
+//     }
+//     }
 
     stage('Build image') {
         steps {
@@ -98,11 +98,11 @@ pipeline {
     }
     }
 
-    stage('Teardown docker-compose') {
-        steps {
-        sh 'docker-compose down --rmi local'
-    }
-    }
+//     stage('Teardown docker-compose') {
+//         steps {
+//         sh 'docker-compose down --rmi local'
+//     }
+//     }
 
     stage('Allure Report') {
         steps {
