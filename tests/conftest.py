@@ -1,6 +1,7 @@
 
 import pytest
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from framework.common.env_vars import should_run_headless
 
 
@@ -25,6 +26,8 @@ def _get_chrome_options() -> webdriver.ChromeOptions:
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--disable-setuid-sandbox")
+            chrome_options.add_argument("add_argument('--ignore-ssl-errors=yes')")
+            chrome_options.add_argument('--ignore-certificate-errors')
 
         return chrome_options
 
@@ -32,7 +35,8 @@ def _get_chrome_options() -> webdriver.ChromeOptions:
 @pytest.fixture
 def get_webdriver(_get_chrome_options):
     options = _get_chrome_options
-    driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome(options=options)
+    driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub', options=options)
     driver.set_window_size(1920, 1080)
     driver.maximize_window()
     driver.implicitly_wait(30)
