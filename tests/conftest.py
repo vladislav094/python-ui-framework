@@ -36,8 +36,7 @@ def _get_chrome_options() -> webdriver.ChromeOptions:
 def get_webdriver(_get_chrome_options):
     options = _get_chrome_options
     # driver = webdriver.Chrome(options=options)
-    # driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub', options=options)
-    driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub', desired_capabilities=DesiredCapabilities.CHROME)
+    driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub', options=options)
     driver.set_window_size(1920, 1080)
     driver.maximize_window()
     driver.implicitly_wait(30)
