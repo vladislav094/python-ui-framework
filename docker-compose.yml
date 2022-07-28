@@ -37,6 +37,7 @@ services:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
+
   allure:
     image: "frankescobar/allure-docker-service"
     environment:
@@ -45,8 +46,8 @@ services:
     ports:
       - "5050:5050"
     volumes:
-      - ${WORKSPACE}/allure-results:/app/allure-results
-      - ${WORKSPACE}/allure-reports:/app/default-reports
+      - ${PWD}/allure-results:/app/allure-results
+      - ${PWD}/allure-reports:/app/default-reports
 
   allure-ui:
     image: "frankescobar/allure-docker-service-ui"
