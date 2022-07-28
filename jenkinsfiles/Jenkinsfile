@@ -7,6 +7,12 @@ pipeline {
 
     stages {
 
+    stage("Docker Setup") {
+        steps {
+        sh "docker-compose up -d chrome allure allure-ui"
+    }
+    }
+
     stage("Clone repository") {
         steps {
         checkout scm
@@ -28,8 +34,6 @@ pipeline {
                 --name example1 \
                 --rm \
                 --volume ${WORKSPACE}/allure-results/:/code/allure-results/ \
-                --volume ${WORKSPACE}/allure-results/:/app/allure-results \
-                --volume ${WORKSPACE}/allure-reports/:/app/default-reports \
                 web_test \
                 pytest tests/negative_tests/test_general_checks.py::TestGeneralChecks::test_check_wrong_title_of_the_page"
     }
@@ -39,6 +43,12 @@ pipeline {
     stage('Remove image') {
         steps {
         sh 'docker rmi web_test -f'
+    }
+    }
+
+    stage('Teardown docker-compose') {
+        steps {
+        sh 'docker-compose down --rmi local'
     }
     }
 
