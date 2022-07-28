@@ -28,8 +28,8 @@ pipeline {
                 --name example1 \
                 --rm \
                 --volume ${WORKSPACE}/allure-results/:/code/allure-results/ \
-                --volume ${WORKSPACE}allure-results:/app/allure-results \
-                --volume ${WORKSPACE}allure-reports:/app/default-reports \
+                --volume ${WORKSPACE}/allure-results:/app/allure-results \
+                --volume ${WORKSPACE}/allure-reports:/app/default-reports \
                 web_test \
                 pytest tests/negative_tests/test_general_checks.py::TestGeneralChecks::test_check_wrong_title_of_the_page"
     }
