@@ -46,11 +46,11 @@ pipeline {
     }
     }
 
-    stage('Teardown docker-compose') {
-        steps {
-        sh 'docker-compose down --rmi local'
-    }
-    }
+//     stage('Teardown docker-compose') {
+//         steps {
+//         sh 'docker-compose down --rmi local'
+//     }
+//     }
 
     stage('Allure Report') {
         steps {
