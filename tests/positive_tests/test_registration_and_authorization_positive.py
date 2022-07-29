@@ -21,3 +21,4 @@ class TestRegistrationAuthorization:
 		automation_practice.go_to("index.php?controller=authentication&back=my-account")
 		sign_in.authorization_in_account()
 		sign_in.assert_my_name_in_personal_account()
+
