@@ -1,4 +1,9 @@
 version: "3"
+volumes:
+  web_data:
+    external: true
+
+
 services:
   chrome:
     image: selenium/node-chrome:4.3.0-20220706
@@ -46,8 +51,8 @@ services:
     ports:
       - "5050:5050"
     volumes:
-      - selenium-server:/app/allure-results
-      - ${WORKSPACE}/allure-reports/:/app/default-reports
+      - web_data:/app/allure-results
+#      - ${WORKSPACE}/allure-reports/:/app/default-reports
 
   allure-ui:
     image: "frankescobar/allure-docker-service-ui"
