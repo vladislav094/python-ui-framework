@@ -1,8 +1,9 @@
 version: "3"
 volumes:
-  web_data:
+  allure-results:
     external: true
-
+  allure-reports:
+    external: true
 
 services:
   chrome:
@@ -51,8 +52,8 @@ services:
     ports:
       - "5050:5050"
     volumes:
-      - web_data:/app/allure-results
-#      - ${WORKSPACE}/allure-reports/:/app/default-reports
+      - allure-results:/app/allure-results
+      - allure-reports:/app/default-reports
 
   allure-ui:
     image: "frankescobar/allure-docker-service-ui"
