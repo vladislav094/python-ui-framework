@@ -34,6 +34,7 @@ pipeline {
                 --name example1 \
                 --rm \
                 --volume ${WORKSPACE}/allure-results/:/code/allure-results/ \
+                --volume selenium-server:/code/allure-results \
                 web_test \
                 pytest tests/negative_tests/test_general_checks.py::TestGeneralChecks::test_check_wrong_title_of_the_page"
     }
