@@ -29,7 +29,7 @@ RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
 # Copy the source code into the image.
-RUN mkdir allure-report
+RUN mkdir allure-reports
 COPY framework ./framework
 COPY tests ./tests
 COPY jenkinsfiles ./jenkinsfiles
