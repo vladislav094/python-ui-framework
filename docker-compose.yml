@@ -46,7 +46,7 @@ services:
     ports:
       - "5050:5050"
     volumes:
-      - ${WORKSPACE}/allure-results/:/app/allure-results
+      - selenium-server:/app/allure-results
       - ${WORKSPACE}/allure-reports/:/app/default-reports
 
   allure-ui:
