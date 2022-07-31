@@ -1,13 +1,12 @@
 version: "3"
 volumes:
-  allure-results:
+  selenium-server-allure-results:
     external: true
-  allure-reports:
+  selenium-server-allure-reports:
     external: true
-
 services:
   chrome:
-    image: selenium/node-chrome:4.3.0-20220706
+    image: selenium/node-chrome:4.3.0-20220726
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -17,7 +16,7 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
   edge:
-    image: selenium/node-edge:4.3.0-20220706
+    image: selenium/node-edge:4.3.0-20220726
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -27,7 +26,7 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
   firefox:
-    image: selenium/node-firefox:4.3.0-20220706
+    image: selenium/node-firefox:4.3.0-20220726
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -37,7 +36,7 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
   selenium-hub:
-    image: selenium/hub:4.3.0-20220706
+    image: selenium/hub:4.3.0-20220726
     container_name: selenium-hub
     ports:
       - "4442:4442"
@@ -52,8 +51,8 @@ services:
     ports:
       - "5050:5050"
     volumes:
-      - allure-results:/app/allure-results
-      - allure-reports:/app/default-reports
+      - selenium-server-allure-results:/app/allure-results
+      - selenium-server-allure-reports:/app/default-reports
 
   allure-ui:
     image: "frankescobar/allure-docker-service-ui"
