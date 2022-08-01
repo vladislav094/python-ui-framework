@@ -46,7 +46,7 @@ pipeline {
     }
     }
 
-    stage ('Remove container') {
+    stage('Remove container') {
         steps {
         sh 'docker rm -f example1'
     }
