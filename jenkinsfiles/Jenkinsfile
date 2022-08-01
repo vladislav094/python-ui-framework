@@ -32,12 +32,23 @@ pipeline {
                 -e RUN_HEADLESS=True \
                 --network='host' \
                 --name example1 \
-                --rm \
                 --volume selenium-server-allure-results:/code/allure-results/ \
                 --volume selenium-server-allure-reports:/code/allure-reports/ \
                 web_test \
                 pytest tests/negative_tests/test_general_checks.py::TestGeneralChecks::test_check_wrong_title_of_the_page"
     }
+    }
+    }
+
+    stage('Copy directory from container into workspace') {
+        steps {
+        sh 'docker cp example1:/code/allure-results/ ${WORKSPACE}/'
+    }
+    }
+
+    stage ('Remove container') {
+        steps {
+        sh 'docker rm -f example1'
     }
     }
 
