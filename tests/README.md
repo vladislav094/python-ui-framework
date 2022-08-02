@@ -1,4 +1,4 @@
-## Installing and running the test framework locally
+## Installing and running the test framework locally. Integration with Docker, Selenium Grid, Jenkins, Allure, Allure-Docker-Service.
 ### Via Jenkins (local)
 The developer of this framework expects that Jenkins (CI) is installed and configured on your local machine
 #### To run a project inside Jenkins, you need:
