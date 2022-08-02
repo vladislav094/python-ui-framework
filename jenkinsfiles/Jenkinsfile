@@ -10,7 +10,7 @@ pipeline {
     stage("Docker Setup") {
         steps {
 //         sh "docker-compose up -d chrome selenium-hub allure allure-ui"
-        sh "docker-compose up -d allure allure-ui"
+//         sh "docker-compose up -d allure allure-ui"
     }
     }
 
@@ -36,7 +36,7 @@ pipeline {
                 --volume selenium-server-allure-results:/code/allure-results/ \
                 --volume selenium-server-allure-reports:/code/allure-reports/ \
                 web_test \
-                pytest tests/negative_tests/test_general_checks.py::TestGeneralChecks::test_check_wrong_title_of_the_page"
+                pytest --browser firefox --bro_version 102.0 tests/negative_tests/test_general_checks.py"
     }
     }
     }
