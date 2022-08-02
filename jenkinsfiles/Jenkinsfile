@@ -7,12 +7,12 @@ pipeline {
 
     stages {
 
-    stage("Docker Setup") {
-        steps {
+//     stage("Docker Setup") {
+//         steps {
 //         sh "docker-compose up -d chrome selenium-hub allure allure-ui"
 //         sh "docker-compose up -d allure allure-ui"
-    }
-    }
+//     }
+//     }
 
     stage("Clone repository") {
         steps {
