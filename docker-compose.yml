@@ -1,9 +1,11 @@
 version: "3"
+
 volumes:
   selenium-server-allure-results:
     external: true
   selenium-server-allure-reports:
     external: true
+
 services:
   chrome:
     image: selenium/node-chrome:4.3.0-20220726
