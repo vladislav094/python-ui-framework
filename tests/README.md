@@ -1,4 +1,4 @@
-## Installing and running a test framework on a local machine
+## Installing and running the test framework locally
 ### Via Jenkins (local)
 The developer of this framework expects that Jenkins (CI) is installed and configured on your local machine
 #### To run a project inside Jenkins, you need:
