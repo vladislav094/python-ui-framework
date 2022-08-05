@@ -8,7 +8,7 @@ from framework.common.env_vars import should_run_headless
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
     parser.addoption("--executor", action="store", default="192.168.100.7")
-    parser.addoption("--bro_version", action="store", default="")
+    parser.addoption("--bversion", action="store", default="")
 
 @pytest.fixture
 def _get_chrome_options() -> webdriver.ChromeOptions:
@@ -39,10 +39,15 @@ def _get_chrome_options() -> webdriver.ChromeOptions:
 def get_webdriver(_get_chrome_options, request):
     browser = request.config.getoption("--browser")
     executor = request.config.getoption("--executor")
-    bro_version = request.config.getoption("--bro_version")
+    version = request.config.getoption("--bversion")
+
+    # executor_url = f"http://{executor}:4444/wd/hub"
+    executor_url = f"https://selenium2-1.dev-bitrix.by/wd/hub/"
+    # executor_url = f"https://192.168.100.20:4444/wd/hub/"
+
     capabilities = {
         "browserName" : browser,
-        "browserVersion" : bro_version,
+        "browserVersion" : version,
         "selenoid:options": {
             "enableVNC" : True
             # "enableVideo": False
@@ -51,7 +56,9 @@ def get_webdriver(_get_chrome_options, request):
     options = _get_chrome_options
     # driver = webdriver.Chrome(options=options)
     # driver = webdriver.Remote(command_executor=f'http://{executor}:4444/wd/hub', options=options)
-    driver = webdriver.Remote(command_executor=f'http://{executor}:4444/wd/hub', desired_capabilities=capabilities)
+    driver = webdriver.Remote(
+        desired_capabilities=capabilities,
+        command_executor=executor_url)
     driver.set_window_size(1920, 1080)
     driver.maximize_window()
     driver.implicitly_wait(30)
