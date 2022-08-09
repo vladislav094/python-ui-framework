@@ -35,17 +35,18 @@ pipeline {
                 --name example1 \
                 --volume selenium-server-allure-results:/code/allure-results/ \
                 --volume selenium-server-allure-reports:/code/allure-reports/ \
+                --cp example1:/code/allure-results/ ${WORKSPACE}/ \
                 web_test \
                 pytest --browser firefox --bversion 102.0 tests/negative_tests/test_general_checks.py"
     }
     }
     }
 
-    stage('Copy directory from container into workspace') {
-        steps {
-        sh 'docker cp example1:/code/allure-results/ ${WORKSPACE}/'
-    }
-    }
+//     stage('Copy directory from container into workspace') {
+//         steps {
+//         sh 'docker cp example1:/code/allure-results/ ${WORKSPACE}/'
+//     }
+//     }
 
     stage('Remove container') {
         steps {
@@ -53,11 +54,11 @@ pipeline {
     }
     }
 
-    stage('Remove image') {
-        steps {
-        sh 'docker rmi web_test -f'
-    }
-    }
+//     stage('Remove image') {
+//         steps {
+//         sh 'docker rmi web_test -f'
+//     }
+//     }
 
 //     stage('Teardown docker-compose') {
 //         steps {
