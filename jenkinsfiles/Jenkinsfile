@@ -20,11 +20,11 @@ pipeline {
     }
     }
 
-    stage('Build image') {
-        steps {
-        sh "docker build -t web_test ."
-    }
-    }
+//     stage('Build image') {
+//         steps {
+//         sh "docker build -t web_test ."
+//     }
+//     }
 
     stage('Execute script') {
         steps {
@@ -35,7 +35,7 @@ pipeline {
                 --name example1 \
                 --volume selenium-server-allure-results:/code/allure-results/ \
                 --volume selenium-server-allure-reports:/code/allure-reports/ \
-                --cp example1:/code/allure-results/ ${WORKSPACE}/ \
+                --volume ${WORKSPACE}/allure-results:/app/allure-results \
                 web_test \
                 pytest --browser firefox --bversion 102.0 tests/negative_tests/test_general_checks.py"
     }
