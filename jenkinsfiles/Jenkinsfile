@@ -45,11 +45,11 @@ pipeline {
 //                 --volume ${WORKSPACE}/allure-results:/code/allure-results/
 //                 --volume ${WORKSPACE}/allure-report:/code/allure-reports/
 
-//     stage('Copy directory from container into workspace') {
-//         steps {
-//         sh 'docker cp example1:/code/allure-results/ ${WORKSPACE}/'
-//     }
-//     }
+    stage('Copy directory from container into workspace') {
+        steps {
+        sh 'docker cp example1:/code/allure-results/ ${WORKSPACE}/'
+    }
+    }
 
     stage('Remove container') {
         steps {
