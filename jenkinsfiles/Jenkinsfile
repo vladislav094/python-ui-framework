@@ -36,7 +36,8 @@ pipeline {
                 --volume selenium-server-allure-results:/code/allure-results/ \
                 --volume selenium-server-allure-reports:/code/allure-reports/ \
                 web_test \
-                pytest --browser firefox --bversion 102.0 tests/negative_tests/test_general_checks.py"
+                pytest --browser firefox --bversion 102.0 -n3"
+//                 pytest --browser firefox --bversion 102.0 tests/negative_tests/test_general_checks.py
     }
     }
     }
