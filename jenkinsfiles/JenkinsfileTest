@@ -47,7 +47,7 @@ pipeline {
     }
     }
 
-    stage('Execute script') {
+    stage('Execute script 2') {
         steps {
         catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
             sh "docker run \
@@ -63,7 +63,7 @@ pipeline {
     }
     }
 
-    stage('Remove container') {
+    stage('Remove container 2') {
         steps {
         sh 'docker rm -f example1'
     }
